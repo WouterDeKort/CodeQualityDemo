@@ -46,6 +46,8 @@ static async Task StartAnalysisAsync(ActionInputs inputs, IHost host)
         var logger = Get<ILoggerFactory>(host).CreateLogger(nameof(StartAnalysisAsync));
         var fileExists = File.Exists(fullPath);
 
+
+        logger.logInformation($"Fullpath: {fullPath}");
         logger.LogInformation(
             $"{(fileExists ? "Updating" : "Creating")} {fileName} markdown file with latest code metric data.");
 
