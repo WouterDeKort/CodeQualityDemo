@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-    - 'app/**'               # run on all changes to this dir
+    - '!CODE_METRICS.md'
   workflow_dispatch:
     inputs:
       reason:
@@ -31,11 +31,10 @@ jobs:
         name: ${{ github.repository }}
         branch: ${{ github.ref }}
         dir: ${{ './' }}
-      
-    - name: Create pull request
-      uses: peter-evans/create-pull-request@v3.4.1
+
+    - name: Commit and push changes
       if: ${{ steps.dotnet-code-metrics.outputs.updated-metrics }} == 'true'
-      with:
-        title: '${{ steps.dotnet-code-metrics.outputs.summary-title }}'
-        body: '${{ steps.dotnet-code-metrics.outputs.summary-details }}'
-        commit-message: '.NET code metrics, automated pull request.'
+      run: |
+          git config user.email "codemetricbot@stackoverflow.com"
+          git config user.name "#code-metrics"
+          git diff --quiet && git diff --staged --quiet || git commit -am 'Automated cod metrics report' && git push
