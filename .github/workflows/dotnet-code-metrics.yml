@@ -26,7 +26,7 @@ jobs:
 
     - name: .NET code metrics
       id: dotnet-code-metrics
-      uses: WouterDeKort/CodeQualityDemo/github-actions/CalculateCodeMetrics.GitHubAction@main
+      uses: WouterDeKort/CodeQualityDemo/github-actions/CalculateCodeMetrics/CalculateCodeMetrics.GitHubAction@main
       env:
         GREETINGS: 'Hello, .NET developers!' # ${{ secrets.GITHUB_TOKEN }}
       with:
