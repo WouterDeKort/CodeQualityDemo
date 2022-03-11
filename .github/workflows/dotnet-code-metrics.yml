@@ -22,7 +22,7 @@ jobs:
       with:
         owner: ${{ github.repository_owner }}
         name: ${{ github.repository }}
-        branch: ${{ github.ref }}
+        branch: ${{ github.event.pull_request.head.ref }}
         dir: ${{ './' }}
 
     - name: Commit and push changes
