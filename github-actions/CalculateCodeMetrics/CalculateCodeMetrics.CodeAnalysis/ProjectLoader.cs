@@ -1,7 +1,7 @@
 ﻿using Project = Microsoft.Build.Evaluation.Project;
 using ProjectRootElement = Microsoft.Build.Construction.ProjectRootElement;
 
-namespace DotNet.CodeAnalysis;
+namespace CalculateCodeMetrics.CodeAnalysis;
 
 /// Inspired by:
 /// https://github.com/dotnet/roslyn/blob/main/src/Workspaces/Core/MSBuild/MSBuild/MSBuildProjectLoader.cs

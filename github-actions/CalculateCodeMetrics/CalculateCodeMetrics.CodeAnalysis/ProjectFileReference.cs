@@ -1,4 +1,4 @@
-﻿namespace DotNet.CodeAnalysis;
+﻿namespace CalculateCodeMetrics.CodeAnalysis;
 
 /// Internals inspired/borrowed from:
 /// https://github.com/dotnet/roslyn/blob/main/src/Workspaces/Core/MSBuild/MSBuild/ProjectFile/ProjectFileReference.cs

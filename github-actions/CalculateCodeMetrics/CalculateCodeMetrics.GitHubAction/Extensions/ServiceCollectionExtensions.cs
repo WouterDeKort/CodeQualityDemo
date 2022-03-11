@@ -1,4 +1,4 @@
-﻿namespace DotNet.GitHubAction.Extensions;
+﻿namespace CalculateCodeMetrics.GitHubAction.Extensions;
 
 static class ServiceCollectionExtensions
 {

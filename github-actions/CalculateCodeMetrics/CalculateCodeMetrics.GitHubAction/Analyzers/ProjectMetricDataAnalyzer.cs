@@ -1,6 +1,6 @@
 ﻿using System.Collections.Immutable;
 
-namespace DotNet.GitHubAction.Analyzers;
+namespace CalculateCodeMetrics.GitHubAction.Analyzers;
 
 sealed class ProjectMetricDataAnalyzer
 {

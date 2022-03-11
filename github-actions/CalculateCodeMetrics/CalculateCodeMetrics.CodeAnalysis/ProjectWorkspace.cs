@@ -2,7 +2,7 @@
 using MSBProject = Microsoft.Build.Evaluation.Project;
 using MSBProjectIntance = Microsoft.Build.Execution.ProjectInstance;
 
-namespace DotNet.CodeAnalysis;
+namespace CalculateCodeMetrics.CodeAnalysis;
 
 /// Inspired by:
 /// https://github.com/dotnet/roslyn/blob/main/src/Workspaces/Core/MSBuild/MSBuild/MSBuildWorkspace.cs

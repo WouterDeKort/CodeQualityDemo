@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotNet.CodeAnalysis\DotNet.CodeAnalysis.csproj" />
+    <ProjectReference Include="..\CalculateCodeMetrics.CodeAnalysis\CalculateCodeMetrics.CodeAnalysis.csproj" />
   </ItemGroup>
 
 </Project>

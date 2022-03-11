@@ -1,18 +1,9 @@
-﻿namespace DotNet.GitHubAction;
+﻿namespace CalculateCodeMetrics.GitHubAction;
 
 public class ActionInputs
 {
     string _repositoryName = null!;
     string _branchName = null!;
-
-    public ActionInputs()
-    {
-        if (Environment.GetEnvironmentVariable(
-            "GREETINGS") is { Length: > 0 } greetings)
-        {
-            Console.WriteLine(greetings);
-        }
-    }
 
     [Option('o', "owner",
         Required = true,

@@ -1,6 +1,6 @@
 ﻿using Microsoft.CodeAnalysis.CSharp;
 
-namespace DotNet.CodeAnalysis.CSharp;
+namespace CalculateCodeMetrics.CodeAnalysis.CSharp;
 
 static class CSharpDefaults
 {

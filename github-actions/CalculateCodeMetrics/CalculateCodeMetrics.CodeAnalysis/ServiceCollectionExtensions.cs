@@ -1,4 +1,4 @@
-﻿namespace DotNet.CodeAnalysis;
+﻿namespace CalculateCodeMetrics.CodeAnalysis;
 
 public static class ServiceCollectionExtensions
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.CodeAnalysis.VisualBasic;
 
-namespace DotNet.CodeAnalysis.VisualBasic;
+namespace CalculateCodeMetrics.CodeAnalysis.VisualBasic;
 
 static class VisualBasicDefaults
 {

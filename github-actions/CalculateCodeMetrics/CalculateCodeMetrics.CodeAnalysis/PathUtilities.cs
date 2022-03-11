@@ -1,4 +1,4 @@
-﻿namespace DotNet.CodeAnalysis
+﻿namespace CalculateCodeMetrics.CodeAnalysis
 {
     /// Internals borrowed from:
     /// https://github.com/dotnet/roslyn/blob/main/src/Compilers/Core/Portable/FileSystem/PathUtilities.cs

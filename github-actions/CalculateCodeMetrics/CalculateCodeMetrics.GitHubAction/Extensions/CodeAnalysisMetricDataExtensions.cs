@@ -1,7 +1,7 @@
 ﻿using System.Reflection.Metadata;
 using System.Text.RegularExpressions;
 
-namespace DotNet.GitHubAction.Extensions;
+namespace CalculateCodeMetrics.GitHubAction.Extensions;
 
 static class CodeAnalysisMetricDataExtensions
 {

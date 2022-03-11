@@ -24,14 +24,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: 'Print manual run reason'
-      if: ${{ github.event_name == 'workflow_dispatch' }}
-      run: |
-        echo 'Reason: ${{ github.event.inputs.reason }}'
-
     - name: .NET code metrics
       id: dotnet-code-metrics
-      uses: WouterDeKort/CodeQualityDemo/github-actions/DotNet.GitHubAction@main
+      uses: WouterDeKort/CodeQualityDemo/github-actions/CalculateCodeMetrics.GitHubAction@main
       env:
         GREETINGS: 'Hello, .NET developers!' # ${{ secrets.GITHUB_TOKEN }}
       with:
