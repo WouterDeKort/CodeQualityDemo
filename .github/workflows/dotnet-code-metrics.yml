@@ -30,7 +30,7 @@ jobs:
         owner: ${{ github.repository_owner }}
         name: ${{ github.repository }}
         branch: ${{ github.ref }}
-        dir: ${{ './github-actions/DotNet.GitHubAction' }}
+        dir: ${{ './app' }}
       
     - name: Create pull request
       uses: peter-evans/create-pull-request@v3.4.1
