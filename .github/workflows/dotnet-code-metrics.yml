@@ -5,7 +5,6 @@ on:
     branches: [ main ]
     paths:
     - 'app/**'               # run on all changes to this dir
-    - '!github-actions/DotNet.GitHubAction/CODE_METRICS.md' # ignore this file
   workflow_dispatch:
     inputs:
       reason:
@@ -26,9 +25,7 @@ jobs:
 
     - name: .NET code metrics
       id: dotnet-code-metrics
-      uses: WouterDeKort/CodeQualityDemo/github-actions/CalculateCodeMetrics/CalculateCodeMetrics.GitHubAction@main
-      env:
-        GREETINGS: 'Hello, .NET developers!' # ${{ secrets.GITHUB_TOKEN }}
+      uses: WouterDeKort/CodeQualityDemo/github-actions/CalculateCodeMetrics@main
       with:
         owner: ${{ github.repository_owner }}
         name: ${{ github.repository }}
