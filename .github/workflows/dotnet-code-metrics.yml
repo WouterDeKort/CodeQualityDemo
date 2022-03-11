@@ -1,15 +1,6 @@
 name: '.NET code metrics'
 
-on:
-  pull_request:
-    paths:
-    - '!CODE_METRICS.md'
-  workflow_dispatch:
-    inputs:
-      reason:
-        description: 'The reason for running the workflow'
-        required: true
-        default: 'Manual run'
+on: pull_request
 
 jobs:
   build:
