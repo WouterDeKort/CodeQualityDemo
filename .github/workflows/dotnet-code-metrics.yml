@@ -21,7 +21,12 @@ jobs:
         pull-requests: write
 
     steps:
-    - uses: actions/checkout@v2
+    
+    - name: Checkout repo
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+        fetch-depth: 1
 
     - name: .NET code metrics
       id: dotnet-code-metrics
