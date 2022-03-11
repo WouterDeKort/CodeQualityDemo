@@ -30,4 +30,4 @@ jobs:
       run: |
           git config user.email "codemetricbot@stackoverflow.com"
           git config user.name "#code-metrics"
-          git diff --quiet && git diff --staged --quiet || git commit -am 'Automated cod metrics report' && git push
+          git diff  && git diff --staged  || git commit -am 'Automated cod metrics report' && git push
